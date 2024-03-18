@@ -10,6 +10,8 @@ public interface Board {
 
     boolean isLegalMove(int col);
 
+    boolean exitLegalMoves();
+
     boolean existLegalMoves();
 
     void updateMove(int col, Piece move);
@@ -19,4 +21,6 @@ public interface Board {
 
 
     Piece[][] getPieces();
+
+    void updateMove(int col, int row, Piece move);
 }
